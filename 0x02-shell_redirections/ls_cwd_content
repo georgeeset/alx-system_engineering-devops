@@ -1,0 +1,14 @@
+total 48
+drwxr-xr-x 2 georgetwo georgetwo 4096 Sep  6 02:42 .
+drwxr-xr-x 6 georgetwo georgetwo 4096 Sep  6 01:51 ..
+-rwxr-xr-x 1 georgetwo georgetwo   35 Sep  5 23:21 0-hello_world
+-rwxr--r-- 1 georgetwo georgetwo   28 Sep  5 23:32 1-confused_smiley
+-rwxr--r-- 1 georgetwo georgetwo   28 Sep  5 23:50 2-hellofile
+-rwxr--r-- 1 georgetwo georgetwo   39 Sep  6 02:20 3-twofiles
+-rwxr--r-- 1 georgetwo georgetwo   29 Sep  6 01:59 4-lastlines
+-rwxr--r-- 1 georgetwo georgetwo   29 Sep  6 02:16 5-firstlines
+-rwxr--r-- 1 georgetwo georgetwo   40 Sep  6 02:32 6-third_line
+-rwxr--r-- 1 georgetwo georgetwo  109 Sep  6 02:35 7-file
+-rwxr--r-- 1 georgetwo georgetwo   36 Sep  6 02:41 8-cwd_state
+-rw-r--r-- 1 georgetwo georgetwo    0 Sep  6 02:42 ls_cwd_content
+-rwxr--r-- 1 georgetwo georgetwo  152 Sep  5 21:47 README.md
