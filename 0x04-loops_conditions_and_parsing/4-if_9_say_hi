@@ -2,7 +2,7 @@
 #prints Best school 10 times but for 9th iteration displays
 #Best school and then Hi
 
-cnt=0
+cnt=1
 while [ $cnt -le 10 ]
 do
     echo "Best School"
