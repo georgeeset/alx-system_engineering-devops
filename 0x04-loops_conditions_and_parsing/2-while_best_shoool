@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # The moduole prints Best school 10 times using while loop
 
 val=0
