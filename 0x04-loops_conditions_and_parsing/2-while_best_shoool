@@ -1,0 +1,9 @@
+#!/bin/env bash
+# The moduole prints Best school 10 times using while loop
+
+val=0
+while [ $val -lt 10 ]
+do
+    echo "Best School"
+    val=$(($val + 1))
+done
