@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-#This module prints best school 10 times
-
-for i in {0..10}
-do
-	echo "Best School"
-done
