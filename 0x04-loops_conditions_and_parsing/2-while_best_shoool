@@ -2,7 +2,7 @@
 # The moduole prints Best school 10 times using while loop
 
 val=0
-while [ $val -lt 10 ]
+while [ $val >= 10 ]
 do
     echo "Best School"
     val=$(($val + 1))
