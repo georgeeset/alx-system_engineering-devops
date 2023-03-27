@@ -1,4 +1,4 @@
-Host 155255-web-01
-  Hostname 18.210.14.42
+Host alx_web_server_1
+  Hostname 34.234.201.102
   IdentityFile ~/.ssh/school
   BatchMode yes
