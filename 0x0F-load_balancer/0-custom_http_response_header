@@ -13,4 +13,7 @@ sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://www.yout
 sudo sed -i "/listen 80 default_server;/a error_page 404 /404.html;" /etc/nginx/sites-available/default
 
 sudo sed -i '14a \\tadd_header X-Served-By '"${HOSTNAME}"';' /etc/nginx/nginx.conf
+
+sudo ufw allow 'Nginx HTTP'
+
 sudo service nginx restart
