@@ -1,0 +1,20 @@
+-- create a database named tyrell_corp
+CREATE DATABASE IF NOT EXISTS tyrell_corp;
+
+-- select the db
+USE tyrell_corp;
+
+-- create table
+CREATE TABLE IF NOT EXISTS nexus6(
+       id INT NOT NULL AUTO_INCREMENT,
+              name VARCHAR(256),
+	             PRIMARY KEY (id)
+		     );
+
+-- add data
+INSERT INTO nexus6 (name) VALUES
+       ('GEORGE'),
+              ('ESETEVBE');
+
+-- display changes
+SELECT * FROM nexus6;
