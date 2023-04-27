@@ -33,8 +33,8 @@ if __name__ == "__main__":
             tasks_count += 1
 
     print("Employee {} is done with tasks({}/{}):"
-          .format(users_json['name'], completed_tasks, tasks_count
-                  + completed_tasks
+          .format(users_json['name'],
+                  completed_tasks, tasks_count + completed_tasks
                   )
           )
 
