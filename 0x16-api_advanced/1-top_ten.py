@@ -28,8 +28,8 @@ def top_ten(subreddit):
         allow_redirects=False
         )
     if response.status_code != 200:
-        print(response.status_code)
-        return 0
+        print("None")
+        return
     data = response.json().get("data")
     children = data.get('children')
 
