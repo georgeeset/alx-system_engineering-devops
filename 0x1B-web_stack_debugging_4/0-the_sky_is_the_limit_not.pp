@@ -1,6 +1,6 @@
 #improve performance of nginx
 exec { 'increase max number to 10000 ewquest':
-  command => 'sed -i "s/100/10000/" /etc/default/nginx',
+  command => 'sed -i "s/15/10000/" /etc/default/nginx',
   path    => '/bin'
   }
 
