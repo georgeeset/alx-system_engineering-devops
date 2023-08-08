@@ -2,7 +2,8 @@
 """
 A recursive function that queries the Reddit API, parses the title of all
 hot articles, and prints a sorted count of given keywords (case-insensitive,
-delimited by spaces. Javascript should count as javascript, but java should not)
+delimited by spaces. Javascript should count as javascript,
+but java should not)
 
 """
 import re
@@ -63,8 +64,8 @@ def count_words(subreddit, word_list):
 
     recurse(subreddit, dictionary)
 
-    l = sorted(dictionary.items(), key=lambda kv: kv[1])
-    l.reverse()
+    ltem = sorted(dictionary.items(), key=lambda kv: kv[1])
+    ltem.reverse()
 
     if len(l) != 0:
         for item in l:
