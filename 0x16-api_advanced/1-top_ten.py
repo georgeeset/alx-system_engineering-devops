@@ -10,13 +10,15 @@ def top_ten(subreddit):
     """
     Print the titles of the first 10 hot posts listed
     for a given subreddit.
+
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     header = {
-        "User-Agent": "George Eset alx student",
+        "User-Agent": "George Eset alx student task 1",
     }
 
-    param = {
+    # configure for first 10 and global search
+    parameter = {
         "limit": "10",
         "q": "GLOBAL",
     }
@@ -24,7 +26,7 @@ def top_ten(subreddit):
     response = requests.get(
         url,
         headers=header,
-        params=param,
+        params=parameter,
         allow_redirects=False
         )
     if response.status_code != 200:
@@ -33,5 +35,5 @@ def top_ten(subreddit):
     data = response.json().get("data")
     children = data.get('children')
 
-    for child in children:
-        print(child.get('data').get('title'))
+    for item in children:
+        print(item.get('data').get('title'))
