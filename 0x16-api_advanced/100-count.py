@@ -19,8 +19,8 @@ def add_title(dictionary, hot_posts):
     title = hot_posts[0]['data']['title'].split()
     for word in title:
         for key in dictionary.keys():
-            c = re.compile("^{}$".format(key), re.I)
-            if c.findall(word):
+            substr = re.compile("^{}$".format(key), re.I)
+            if substr.findall(word):
                 dictionary[key] += 1
     hot_posts.pop(0)
     add_title(dictionary, hot_posts)
@@ -56,7 +56,7 @@ def recurse(subreddit, dictionary, after=None):
 
 
 def count_words(subreddit, word_list):
-    """ Init function taht count words """
+    """ Init function that count words """
     dictionary = {}
 
     for word in word_list:
@@ -64,12 +64,12 @@ def count_words(subreddit, word_list):
 
     recurse(subreddit, dictionary)
 
-    ltem = sorted(dictionary.items(), key=lambda kv: kv[1])
-    ltem.reverse()
+    sorted_items = sorted(dictionary.items(), key=lambda k: k[1], reverse=True)
+    # sorted_items.reverse()
 
-    if len(l) != 0:
-        for item in l:
-            if item[1] is not 0:
+    if len(sorted_items):
+        for item in sorted_items:
+            if item[1] != 0:
                 print("{}: {}".format(item[0], item[1]))
     else:
         print("")
